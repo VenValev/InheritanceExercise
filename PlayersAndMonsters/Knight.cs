@@ -4,9 +4,9 @@ using System.Text;
 
 namespace PlayersAndMonsters
 {
-    public class MuseElf : Elf
+    public class Knight : Hero
     {
-        public MuseElf(string username, int level) 
+        public Knight(string username, int level) 
             : base(username, level)
         {
         }

@@ -4,11 +4,12 @@ using System.Text;
 
 namespace PlayersAndMonsters
 {
-    public class MuseElf : Elf
+    public class Wizard : Hero
     {
-        public MuseElf(string username, int level) 
+        public Wizard(string username, int level) 
             : base(username, level)
         {
+
         }
     }
 }
