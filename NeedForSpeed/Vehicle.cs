@@ -7,28 +7,28 @@ namespace NeedForSpeed
     public class Vehicle
     {
         //Fields
-        private double defFuelConsumtion;
-        private double fuelConsumption;
-        private double fuel;
+        private decimal defFuelConsumtion;
+        private decimal fuelConsumption;
+        private decimal fuel;
         private int horsePower;
 
         //Constructor
-        public Vehicle(int horsePower, double fuel)
+        public Vehicle(int horsePower, decimal fuel)
         {
             this.HorsePower = horsePower;
             this.Fuel = fuel;
-            this.DefFuelConsumtion = 1.25;
+            this.DefFuelConsumtion = 1.25m;
             this.FuelConsumption = defFuelConsumtion;
             
         }
         //Properties
-        public double DefFuelConsumtion 
+        public decimal DefFuelConsumtion 
         { 
             get => this.defFuelConsumtion;
             set => this.defFuelConsumtion = value;
         }
         
-        virtual public double FuelConsumption
+        virtual public decimal FuelConsumption
         {
             get
             {
@@ -39,7 +39,7 @@ namespace NeedForSpeed
                 this.fuelConsumption = value;
             }
         }
-        public double Fuel 
+        public decimal Fuel 
         { 
             get => this.fuel;
 
@@ -68,7 +68,7 @@ namespace NeedForSpeed
         }
 
         //Methods
-        virtual public void Drive(double kilometers)
+        virtual public void Drive(decimal kilometers)
         {
             while(kilometers > 0)
             {
