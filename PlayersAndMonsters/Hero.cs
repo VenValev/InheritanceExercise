@@ -6,24 +6,24 @@ namespace PlayersAndMonsters
 {
     public class Hero
     {
-        private string name;
+        private string username;
         private int level;
 
-        public Hero(string name, int level)
+        public Hero(string username, int level)
         {
-            this.Name = name;
+            this.Username = username;
             this.Level = level;
         }
 
-        public string Name 
+        public string Username 
         { 
             get
             {
-                return this.name;
+                return this.username;
             }
             set
             {
-                this.name = value;
+                this.username = value;
             }
         }
         public int Level
@@ -32,5 +32,9 @@ namespace PlayersAndMonsters
             set => this.level = value;
         }
 
+        public override string ToString()
+        {
+            return $"Type: {this.GetType()} Username: {this.Username} Level: {this.Level}";
+        }
     }
 }
