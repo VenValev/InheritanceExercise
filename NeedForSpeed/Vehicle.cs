@@ -25,7 +25,7 @@ namespace NeedForSpeed
             set => this.defFuelConsumtion = 1.25;
         }
         
-        public double FuelConsumption
+        virtual public double FuelConsumption
         {
             get
             {
@@ -33,7 +33,7 @@ namespace NeedForSpeed
             }
             set
             {
-                this.fuelConsumption = value;
+                this.fuelConsumption = this.DefFuelConsumtion;
             }
         }
         public double Fuel 
