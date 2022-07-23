@@ -11,5 +11,10 @@ namespace NeedForSpeed
         {
 
         }
+        public override double FuelConsumption
+        {
+            get => base.FuelConsumption; 
+            set => base.FuelConsumption = 3;
+        }
     }
 }
