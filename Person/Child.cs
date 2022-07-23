@@ -14,18 +14,18 @@ namespace Person
             }
         }
 
-        public int Age
+        public override int Age
         {
-            get { return this.Age; }
+            get { return base.Age; }
             set
             {
                 if(value > 15)
                 {
-                    this.Age = 15;
+                    base.Age = 15;
                 }
                 else
                 {
-                    this.Age = value;
+                    base.Age = value;
                 }
             }
         }

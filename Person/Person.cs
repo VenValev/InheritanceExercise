@@ -25,7 +25,7 @@ namespace Person
             } 
         }
 
-        public int Age
+        public virtual int Age
         {
             get { return this.age; }
             set
