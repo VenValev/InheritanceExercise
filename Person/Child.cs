@@ -6,15 +6,13 @@ namespace Person
 {
     public class Child : Person
     {
-        public Child(string name, int age) : base(name, age)
+        public Child(string name, int age) 
+            : base(name, age)
         {
-            if (this.Age > 15)
-            {
-                
-            }
+            
         }
 
-        public override int Age
+        /*public override int Age
         {
             get { return base.Age; }
             set
@@ -28,7 +26,7 @@ namespace Person
                     base.Age = value;
                 }
             }
-        }
+        }*/
 
     }
 }
