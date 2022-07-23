@@ -13,5 +13,30 @@ namespace Person
         {
 
         }
+
+        public string Name 
+        { 
+            get { return name; } 
+            set 
+            {
+                name = value;
+            } 
+        }
+
+        public int Age
+        {
+            get { return age; }
+            set
+            {
+                if (value < 0)
+                {
+                    age = 0;
+                }
+                else
+                {
+                    age = value;
+                }
+            }
+        }
     }
 }
