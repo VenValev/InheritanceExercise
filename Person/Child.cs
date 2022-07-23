@@ -10,12 +10,25 @@ namespace Person
         {
             if (this.Age > 15)
             {
-                //throw new ArgumentException();
-                this.Age = 15;
+                
             }
         }
 
-
+        public int Age
+        {
+            get { return this.Age; }
+            set
+            {
+                if(value > 15)
+                {
+                    this.Age = 15;
+                }
+                else
+                {
+                    this.Age = value;
+                }
+            }
+        }
 
     }
 }
