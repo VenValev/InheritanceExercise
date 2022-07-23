@@ -9,8 +9,10 @@ namespace Person
         private string name;
         private int age;
 
-        public Person()
+        public Person(string name, int age)
         {
+            Name = name;
+            Age = age;
 
         }
 
@@ -19,7 +21,7 @@ namespace Person
             get { return name; } 
             set 
             {
-                name = value;
+                this.name = value;
             } 
         }
 
@@ -30,11 +32,11 @@ namespace Person
             {
                 if (value < 0)
                 {
-                    age = 0;
+                    this.age = 0;
                 }
                 else
                 {
-                    age = value;
+                    this.age = value;
                 }
             }
         }
