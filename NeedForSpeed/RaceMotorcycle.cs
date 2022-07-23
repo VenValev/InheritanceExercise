@@ -15,7 +15,7 @@ namespace NeedForSpeed
         public override decimal FuelConsumption 
         { 
             get => base.FuelConsumption; 
-            set => base.FuelConsumption = 8m; 
+            set => base.FuelConsumption = 8.0m; 
         }
     }
 }
