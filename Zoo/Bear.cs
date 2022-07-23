@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Zoo
 {
-    public class Snake : Reptile
+    public class Bear : Mammal
     {
-        public Snake(string name) 
+        public Bear(string name) 
             : base(name)
         {
         }
