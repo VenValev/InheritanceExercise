@@ -70,7 +70,7 @@ namespace NeedForSpeed
         //Methods
         virtual public void Drive(double kilometers)
         {
-            while(kilometers > 0)
+            /*while(kilometers > 0)
             {
                 if(Fuel - FuelConsumption < 0)
                 {
@@ -78,7 +78,9 @@ namespace NeedForSpeed
                 }
                 kilometers--;
                 Fuel -= FuelConsumption;
-            }
+            }*/
+
+            Fuel = kilometers * FuelConsumption;
         }
     }
 }
