@@ -17,12 +17,15 @@ namespace NeedForSpeed
         {
             this.HorsePower = horsePower;
             this.Fuel = fuel;
+            this.DefFuelConsumtion = 1.25;
+            this.FuelConsumption = defFuelConsumtion;
+            
         }
         //Properties
         public double DefFuelConsumtion 
         { 
             get => this.defFuelConsumtion;
-            set => this.defFuelConsumtion = 1.25;
+            set => this.defFuelConsumtion = value;
         }
         
         virtual public double FuelConsumption
@@ -33,7 +36,7 @@ namespace NeedForSpeed
             }
             set
             {
-                this.fuelConsumption = this.DefFuelConsumtion;
+                this.fuelConsumption = value;
             }
         }
         public double Fuel 
@@ -67,9 +70,14 @@ namespace NeedForSpeed
         //Methods
         virtual public void Drive(double kilometers)
         {
-            while(Fuel - (kilometers * this.FuelConsumption) > 0)
+            while(kilometers > 0)
             {
-                Fuel -= kilometers * this.FuelConsumption;
+                if(Fuel - FuelConsumption < 0)
+                {
+                    break;
+                }
+                kilometers--;
+                Fuel -= FuelConsumption;
             }
         }
     }
