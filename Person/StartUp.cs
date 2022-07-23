@@ -10,7 +10,9 @@ namespace Person
             int age = int.Parse(Console.ReadLine());
 
             Child child = new Child(name, age);
+            Person person = new Person(name, age);
             Console.WriteLine(child);
+            Console.WriteLine(person);
 
         }
     }
