@@ -32,7 +32,7 @@ namespace Person
             {
                 if (value < 0)
                 {
-                    //throw new ArgumentException();
+                    
                     this.age = 0;
                 }
                 else
@@ -44,12 +44,7 @@ namespace Person
 
         public override string ToString()
         {
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append(String.Format("Name: {0}, Age: {1}",
-                                 this.Name,
-                                 this.Age));
-
-            return stringBuilder.ToString();
+            return $"Name: {this.Name}, Age: {this.Age}";
         }
 
     }
