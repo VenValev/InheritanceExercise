@@ -17,6 +17,13 @@ namespace NeedForSpeed
 
         }
 
+        public double DefFuelConsumtion 
+        { 
+            get => this.defFuelConsumtion;
+            set => this.defFuelConsumtion = value;
+        }
+
+
         virtual public void Drive(double kilometers)
         {
 
