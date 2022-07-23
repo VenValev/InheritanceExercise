@@ -32,6 +32,7 @@ namespace Person
             {
                 if (value < 0)
                 {
+                    //throw new ArgumentException();
                     this.age = 0;
                 }
                 else
