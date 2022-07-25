@@ -76,6 +76,11 @@ namespace NeedForSpeed
                 {
                     break;
                 }
+                if(kilometers < 1)
+                {
+                    Fuel -= kilometers * FuelConsumption;
+                    kilometers = 0;
+                }
                 kilometers--;
                 Fuel -= FuelConsumption;
             }
