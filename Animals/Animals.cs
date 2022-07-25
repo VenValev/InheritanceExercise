@@ -19,5 +19,16 @@ namespace Animals
         public string Name { get; set; }
         public int Age { get; set; }
         public string Gender { get; set; }
+
+        public abstract string ProduceSound();
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"{this.GetType().Name}")
+                .AppendLine($"{this.Name} {this.Age} {this.Gender}")
+                .AppendLine($"{this.ProduceSound()}");
+            return sb.ToString().TrimEnd();
+        }
     }
 }
