@@ -42,7 +42,7 @@ namespace Animals
                 }
                 else if(command == "Tomcat")
                 {
-                    animal = new TomCat(name, age);
+                    animal = new Tomcat(name, age);
 
                 }
                 else
