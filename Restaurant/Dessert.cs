@@ -6,9 +6,12 @@ namespace Restaurant
 {
     public class Dessert : Food
     {
-        public Dessert(string name, decimal price, double grams) 
+        private double calories;
+        public Dessert(string name, decimal price, double grams, double calories) 
             : base(name, price, grams)
         {
         }
+
+        public double Calories { get { return this.calories; } set { this.calories = value; } }
     }
 }
