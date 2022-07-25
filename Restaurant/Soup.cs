@@ -4,9 +4,10 @@ using System.Text;
 
 namespace Restaurant
 {
-    public class Soup : MainDish
+    public class Soup : Starter
     {
-        public Soup(string name, decimal price, double grams) : base(name, price, grams)
+        public Soup(string name, decimal price, double grams) 
+            : base(name, price, grams)
         {
         }
     }
