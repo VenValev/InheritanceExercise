@@ -4,9 +4,9 @@
     {
         public static void Main(string[] args)
         {
-            var vehicle = new Vehicle(100, 100);
+            //var vehicle = new Vehicle(100, 100);
 
-            vehicle.Drive(3);
+            //vehicle.Drive(3);
         }
     }
 }
