@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Restaurant
 {
-    public class Coffee : HotBeverages
+    public class Coffee : HotBeverage
     {
         public const double coffeeMilliliters = 50;
         public const decimal coffeePrice = 3.50m;
