@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Restaurant
 {
-    public class Fish
+    public class Fish : Starter
     {
+        private const double fGrams = 22;
+        public Fish(string name, decimal price) 
+            : base(name, price, fGrams)
+        {
+
+        }
     }
 }
