@@ -85,7 +85,7 @@ namespace Animals
                     }
                     else if (spicies == "Kitten")
                     {
-                        var animal = new Kitten(name, age, gender);
+                        var animal = new Kitten(name, age);
                         Console.WriteLine(animal);
                     }
                     else if(spicies == "Tomcat")

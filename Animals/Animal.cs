@@ -81,9 +81,9 @@ namespace Animals
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"{this.GetType().Name}")
-                .AppendLine($"{this.Name} {this.Age} {this.Gender}")
+                .AppendLine($"{this.Name} {this.Age} {this.Gender.ToString()}")
                 .AppendLine($"{this.ProduceSound()}");
-            return sb.ToString().TrimEnd();
+            return sb.ToString();
         }
     }
 }
