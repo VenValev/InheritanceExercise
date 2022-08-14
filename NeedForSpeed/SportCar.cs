@@ -10,12 +10,11 @@ namespace NeedForSpeed
         public SportCar(int horsePower, double fuel) 
             : base(horsePower, fuel)
         {
-            this.FuelConsumption = fc;
+            //this.FuelConsumption = fc;
         }
-        /*public override double FuelConsumption
+        public override double FuelConsumption
         {
-            get => base.FuelConsumption;
-            set => base.FuelConsumption = 10.0;
-        }*/
+            get => fc;
+        }
     }
 }

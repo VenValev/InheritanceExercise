@@ -23,7 +23,7 @@ namespace NeedForSpeed
         //Properties
         
         
-        virtual public double FuelConsumption
+        public virtual double FuelConsumption
         {
             get
             {
@@ -64,7 +64,7 @@ namespace NeedForSpeed
         }
 
         //Methods
-        virtual public void Drive(double kilometers)
+        public virtual void Drive(double kilometers)
         {
             while(kilometers > 0)
             {
