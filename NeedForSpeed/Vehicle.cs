@@ -18,7 +18,6 @@ namespace NeedForSpeed
             this.HorsePower = horsePower;
             this.Fuel = fuel;
             this.FuelConsumption = defFuelConsumtion;
-            
         }
         //Properties
         
