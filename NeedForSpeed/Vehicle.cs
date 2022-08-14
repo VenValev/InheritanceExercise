@@ -45,14 +45,15 @@ namespace NeedForSpeed
 
             set
             {
-                if(value < 0)
+                /*if(value < 0)
                 {
                     this.fuel = 0;
                 }
                 else
                 {
                     this.fuel = value;
-                }
+                }*/
+                this.fuel = value;
             }
         }
         public int HorsePower 
@@ -80,12 +81,11 @@ namespace NeedForSpeed
                 {
                     Fuel -= kilometers * FuelConsumption;
                     kilometers = 0;
+                    break;
                 }
                 kilometers--;
                 Fuel -= FuelConsumption;
             }
-
-            
         }
     }
 }
