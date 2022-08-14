@@ -6,15 +6,16 @@ namespace NeedForSpeed
 {
     public class SportCar : Car
     {
+        private const double fc = 10.0;
         public SportCar(int horsePower, double fuel) 
             : base(horsePower, fuel)
         {
-
+            this.FuelConsumption = fc;
         }
-        public override double FuelConsumption
+        /*public override double FuelConsumption
         {
             get => base.FuelConsumption;
             set => base.FuelConsumption = 10.0;
-        }
+        }*/
     }
 }

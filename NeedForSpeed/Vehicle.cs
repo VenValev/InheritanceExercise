@@ -7,7 +7,7 @@ namespace NeedForSpeed
     public class Vehicle
     {
         //Fields
-        private double defFuelConsumtion;
+        private const double defFuelConsumtion = 1.25;
         private double fuelConsumption;
         private double fuel;
         private int horsePower;
@@ -17,16 +17,11 @@ namespace NeedForSpeed
         {
             this.HorsePower = horsePower;
             this.Fuel = fuel;
-            this.DefFuelConsumtion = 1.25;
             this.FuelConsumption = defFuelConsumtion;
             
         }
         //Properties
-        public double DefFuelConsumtion 
-        { 
-            get => this.defFuelConsumtion;
-            set => this.defFuelConsumtion = value;
-        }
+        
         
         virtual public double FuelConsumption
         {

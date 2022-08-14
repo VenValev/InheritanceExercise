@@ -26,7 +26,7 @@ namespace Animals
             {
                 if(String.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentNullException(nameof(this.Name), "Invalid input!");
+                    throw new ArgumentException("Invalid input!");
                 }
                 else
                 {
@@ -44,7 +44,7 @@ namespace Animals
             {
                 if(value <= 0)
                 {
-                    throw new ArgumentNullException(nameof(this.Age), "Invalid input!");
+                    throw new ArgumentException("Invalid input!");
                 }
                 else
                 {
@@ -62,7 +62,11 @@ namespace Animals
             {
                 if(String.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentNullException(nameof(this.Gender), "Invalid input!");
+                    throw new ArgumentNullException("Invalid input!");
+                }
+                if(value != "Male" && value != "Female")
+                {
+                    throw new ArgumentNullException("Invalid input!");
                 }
                 else
                 {
