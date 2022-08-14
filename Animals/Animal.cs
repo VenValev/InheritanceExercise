@@ -22,7 +22,7 @@ namespace Animals
             {
                 return this.name;
             }
-            set
+            private set
             {
                 if(String.IsNullOrWhiteSpace(value))
                 {
@@ -40,7 +40,7 @@ namespace Animals
             {
                 return this.age;
             } 
-            set
+            private set
             {
                 if(value <= 0)
                 {
@@ -58,12 +58,12 @@ namespace Animals
             {
                 return this.gender;
             }
-            set
+            private set
             {
-                if(String.IsNullOrWhiteSpace(value))
+                /*if(String.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentNullException("Invalid input!");
-                }
+                }*/
                 if(value != "Male" && value != "Female")
                 {
                     throw new ArgumentNullException("Invalid input!");
